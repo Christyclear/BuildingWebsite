@@ -1,0 +1,127 @@
+.cards{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card1{
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	margin-top: 5rem;
+	margin-left: 10%;
+}
+
+.card2{
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	margin-top: 5rem;
+	margin-left: 4.5%;
+}
+
+.card3{
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	margin-top: 5rem;
+	margin-right: 30%;
+}
+
+.card-side{
+	height: 40rem;
+	width: 40rem;
+	font-size: 3rem;
+	color: white; 
+	backface-visibility: hidden;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.card-side3{
+	height: 40rem;
+	width: 45rem;
+	font-size: 3rem;
+	color: white; 
+	backface-visibility: hidden;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.card-side-front{
+	background-color: var(--color-primary);
+	position: absolute;
+	z-index: 1;
+	transition: all 1s; 
+	opacity: 0.3;
+}
+
+.card1text{
+	text-align: center;
+	margin-top: 4rem;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 4rem; font-style: normal; font-variant: normal; font-weight: 700; 
+}
+
+
+.card-side-back{
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s; 
+}
+
+.card1:hover .card-side-front{
+	transform: rotateY(-180deg);
+}
+
+.card1:hover .card-side-back{
+	transform: rotateY(0deg);
+}
+
+.card-side-front2{
+	background-color: var(--color-primary);
+	position: absolute;
+	z-index: 1;
+	transition: all 1s; 
+	opacity: 0.3;
+}
+  
+.card-side-back2{
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s; 
+}
+
+.card2:hover .card-side-front2{
+	transform: rotateY(-180deg);
+}
+
+.card2:hover .card-side-back2{
+	transform: rotateY(0deg);
+}
+
+
+.card-side-front3{
+	background-color: var(--color-primary);
+	position: absolute;
+	z-index: 1;
+	transition: all 1s; 
+	opacity: 0.3;
+}
+
+.card-side-back3{
+	background-color: white;
+	position: absolute;
+	z-index: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s; 
+}
+
+.card3:hover .card-side-front3{
+	transform: rotateY(-180deg);
+}
+
+.card3:hover .card-side-back3{
+	transform: rotateY(0deg);
+}
